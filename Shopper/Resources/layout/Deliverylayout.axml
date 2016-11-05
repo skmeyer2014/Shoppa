@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="DELIVERY"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDeliveryTitleScreen"
+        android:textColor="#FF000000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:paddingLeft="100dp" />
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:columnCount="2"
+        android:rowCount="6"
+        android:id="@+id/gridLayout1">
+        <TextView
+            android:id="@+id/tvCustName"
+            android:text="NAME:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustName"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="250dp"
+            android:background="@drawable/storename" />
+        <TextView
+            android:id="@+id/tvCustAddress"
+            android:text="ADDRESS:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustAddress"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="250dp"
+            android:background="@drawable/storename" />
+        <TextView
+            android:id="@+id/tvCustCity"
+            android:text="CITY:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustCity"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="250dp"
+            android:background="@drawable/storename" />
+        <TextView
+            android:id="@+id/tvCustState"
+            android:text="STATE:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustState"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="50dp"
+            android:background="@drawable/storename" />
+        <TextView
+            android:id="@+id/tvCustZip"
+            android:text="ZIP CODE:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustZip"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="100dp"
+            android:background="@drawable/storename" />
+        <TextView
+            android:id="@+id/tvCustPhone"
+            android:text="PHONE:"
+            android:textColor="#ff000000"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/edtCustPhone"
+            android:textColor="#ff000000"
+            android:textSize="20dp"
+            android:width="150dp"
+            android:background="@drawable/storename"
+            android:layout_marginRight="73.0dp" />
+    </GridLayout>
+    <TextView
+        android:text="Delivery Date and Time"
+        android:textColor="#ff000000"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <DatePicker
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:id="@+id/datePicker1"
+        android:spinnersShown="true"
+        android:calendarViewShown="false"
+        android:background="#ff0000ff" />
+    <TimePicker
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:id="@+id/timePicker1"
+        android:background="#ff0000ff" />
+    <Button
+        android:text="DELIVER TO THIS ADDRESS"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnDeliver"
+        android:textStyle="bold"
+        android:textColor="#ffffffff" />
+    <Button
+        android:text="HOME"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnHome"
+        android:textStyle="bold" />
+</LinearLayout>

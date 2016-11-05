@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <GridLayout
+        android:rowCount="3"
+        android:columnCount="1"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="50dp">
+        <TextView
+            android:text="PLEASE ENTER YOUR ZIP CODE:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/edtZipCode"
+            android:background="#ff0000ff"
+            android:textColor="#ffffffff"
+            android:layout_marginLeft="70dp" />
+        <Button
+            android:text="TO STORES"
+            android:id="@+id/btnToStores"
+            android:layout_width="200dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+    </GridLayout>
+</LinearLayout>

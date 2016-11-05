@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <TextView
+        android:text="SHOPPING ORDER"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dp"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/black"
+        android:textSize="40dp"
+        android:typeface="serif"
+        android:textStyle="bold" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup1">
+        <RadioButton
+            android:layout_width="300.5dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Buying Items"
+            android:id="@+id/rbBuying"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivering Items"
+            android:id="@+id/rbDelivering"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30dp" />
+    </RadioGroup>
+    <Button
+        android:text="GO &gt;&gt;"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGo"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</LinearLayout>

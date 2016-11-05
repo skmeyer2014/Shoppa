@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white">
+    <TextView
+        android:text="LIST OF STORES"
+        android:layout_width="match_parent"
+        android:layout_height="29.5dp"
+        android:id="@+id/tvSelectStore"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:paddingLeft="50dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="800dp"
+        android:layout_height="150dp">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="248.5dp"
+            android:columnCount="1"
+            android:id="@+id/grdStores"
+            android:background="#ffaabbff" />
+    </ScrollView>
+    <TextView
+        android:text="click on an above store to select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSelectStore"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="22.5dp"
+        android:columnCount="2"
+        android:id="@+id/grdStores">
+        <TextView
+            android:text="SELECTED STORE: "
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvYouSelected"
+            android:textColor="@android:color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:background="#ffffffff" />
+        <TextView
+            android:text=""
+            android:layout_width="90dp"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvSelectedStoreName"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp" />
+    </GridLayout>
+    <Button
+        android:id="@+id/btnViewWebSite"
+        android:text="VIEW WEB SITE"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:height="50dp" />
+    <Button
+        android:id="@+id/btnToItems"
+        android:text="TO ITEMS"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:height="50dp" />
+    <GridLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:text="Add a store:"
+            android:textColor="#ff000000"
+            android:textSize="25dp" />
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/imgAddStore"
+            android:background="@drawable/fabaddstore_small"
+            android:layout_marginTop="12.0dp"
+            android:layout_height="80dp" />
+    </GridLayout>
+</LinearLayout>

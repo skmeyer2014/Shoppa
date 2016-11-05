@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+    <TextView
+        android:text="SHOPPING CART"
+        android:layout_width="match_parent"
+        android:layout_height="29.5dp"
+        android:id="@+id/tvListOfItems"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:paddingLeft="120dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="400dp"
+        android:layout_height="150dp">
+        <GridLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="248.5dp"
+            android:columnCount="1"
+            android:id="@+id/grdShoppingCart"
+            android:background="#ffaabbff" />
+    </ScrollView>
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="6"
+        android:minHeight="25dp"
+        android:minWidth="25dp"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/grdOrderEntry">
+        <TextView
+            android:text="CUSTOMER NAME:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvNameLabel"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="29.5dp"
+            android:id="@+id/tvCustName"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:text="STORE:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvStoreLabel"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="29.5dp"
+            android:id="@+id/tvCustStore"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:text="ITEM DESCRIPTION:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvItemLabel"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_height="29.5dp"
+            android:id="@+id/edtItemDescription"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_width="220dp"
+            android:background="@drawable/storename"
+            android:layout_marginRight="52.0dp" />
+        <TextView
+            android:text="PRICE:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvPriceLabel"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_height="29.5dp"
+            android:id="@+id/edtPrice"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:width="40dp"
+            android:background="@drawable/storename"
+            android:layout_width="75dp" />
+        <TextView
+            android:text="QUANTITY:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvQuantLabel"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_height="29.5dp"
+            android:id="@+id/edtQuant"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:width="40dp"
+            android:background="@drawable/storename"
+            android:layout_width="75dp" />
+        <TextView
+            android:text="ENTER ==&gt;:"
+            android:layout_height="29.5dp"
+            android:id="@+id/tvEnter"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+        <Button
+            android:text="ENTER"
+            android:layout_height="50dp"
+            android:id="@+id/btnEnterOrder"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_width="75dp"
+            android:textStyle="bold" />
+    </GridLayout>
+    <Button
+        android:text="CHECKOUT"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCheckout"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:text="&lt;&lt; BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBack"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>
